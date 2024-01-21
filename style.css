@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  align-items: center;
+}
+
+.card__image {
+  margin-bottom: 4.5rem;
+  border-radius: 20px 20px 0 0;
+}
+
+.card__title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: var(--Dark-blue);
+  margin-bottom: 1.7rem;
+}
+
+.card__description {
+  width: 32rem;
+  margin-bottom: 2rem;
+  color: var(--Desaturated-blue);
+  font-size: 1.7rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  text-align: center;
+}
+
+.card__offer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 35rem;
+  height: 10rem;
+  padding: 22px;
+  background-color: var(--Very-pale-blue);
+  border: 1px solid black;
+  border-radius: 12px;
+}
+
+.offer__icon {
+  height: 4.5rem;
+  margin-right: 20px;
+}
+
+.offer__plan {
+  margin-right: 70px;
+}
+
+.plan__title {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  color: var(--Dark-blue);
+}
+
+.plan__price {
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+
+.offer__change {
+  font-size: 1.2rem;
+  color: red;
+}
